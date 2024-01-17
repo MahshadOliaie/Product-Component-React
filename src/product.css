@@ -1,0 +1,98 @@
+.products {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  padding: 2% 6%;
+  row-gap: 30px;
+
+  @media screen and (min-width:700px) {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  @media screen and (min-width:1000px) {
+    grid-template-columns: repeat(3, 33%);
+  }
+}
+
+
+.card {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+  transition: 500ms;
+}
+
+.card__image {
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.card__image img {
+  width: 100%;
+  transition: 500ms;
+}
+
+.card__about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.card__about__text p {
+  margin: 5px;
+}
+
+.card__about__like svg {
+
+  font-size: 25px;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.card__about__like svg:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
+
+
+path {
+  pointer-events: none;
+}
+
+.freeShipping {
+  position: absolute;
+  right: -1px;
+  top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: rgb(29, 137, 29);
+  padding: 4px 10px;
+  padding-right: 12px;
+  box-shadow: 0px 5px 7px rgb(171, 171, 171);
+  color: white;
+  font-size: 14px;
+  fill: white;
+}
+
+
+.hasGift{
+  position: absolute;
+  left: -1px;
+  top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: rgb(156, 93, 207);
+  padding: 7px 20px;
+  box-shadow: 0px 5px 7px rgb(171, 171, 171);
+  fill: white;
+}
