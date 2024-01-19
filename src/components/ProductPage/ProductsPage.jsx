@@ -1,5 +1,6 @@
-import Product from "./Product";
-import Data from './Model';
+import Product from "../Products/Product";
+import Data from '../../Model';
+import './ProductPage.css'
 
 function ProductsPage() {
     return (
