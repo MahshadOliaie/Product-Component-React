@@ -1,7 +1,7 @@
 
 
 
-let Data = [
+let Data = JSON.parse(localStorage.getItem("Data")) || [
     {
         "id":1,
         "image": "public/jacketProduct.jpg",
