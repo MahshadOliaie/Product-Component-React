@@ -5,9 +5,7 @@ function ProductsPage() {
     return (
         <div className="products">
             {Data.map(item => {
-                const { id, image, name, price, isLiked, hasGift, hasFreeShipping } = item;
-                return <Product image={image} name={name} price={price} isLiked={isLiked}
-                    hasGift={hasGift} hasFreeShipping={hasFreeShipping} id={id} />
+                return <Product {...item} key={item.id}/>
             })}
         </div>
     )
